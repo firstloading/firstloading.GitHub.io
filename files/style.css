@@ -45,3 +45,16 @@ a {
   text-decoration: none;
 }
 /*其它链接文字样式清除^*/
+/* 屏幕宽度响应式变化样式表 */
+@media screen and (max-width: 1200px) {
+    .li{
+        float: none;
+      }
+    .ul{
+        width: 25%;
+        height: 100%;
+    }
+    .li a, .dropbtn, .dropdown{
+        display: block;
+    }
+}
