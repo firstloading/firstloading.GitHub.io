@@ -8,7 +8,7 @@
     position: sticky;
     top: 0;
     overflow: hidden;
-    background-color: #58F8AB;
+    background-color: #58f8abeb;
 }
 #daohang li {
     float: left;
@@ -23,8 +23,16 @@
     background-color: #12F6E9;
 }
 .temporary_card {
-    background-color: #FFF;
+    background-color: #ffffffd5;
+    border-radius: 15px;
+    float: left;
+    padding: 10px;
+    min-width: 50%;
 }
 .temporary_card a {
     text-decoration: none;
+    padding: 12px 5px;
 }
+/* .temporary_card li {
+    mar;
+} */
