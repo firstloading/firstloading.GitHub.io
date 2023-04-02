@@ -1,0 +1,30 @@
+.list {
+    list-style-type: none;
+}
+#daohang {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: #58F8AB;
+}
+#daohang li {
+    float: left;
+    }
+#daohang li a {
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#daohang li a:hover {
+    border-radius: 10px;
+    background-color: #12F6E9;
+}
+.temporary_card {
+    background-color: #FFF;
+}
+.temporary_card a {
+    text-decoration: none;
+}
