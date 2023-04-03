@@ -3,17 +3,44 @@
 <!--头部-->
 <meta charset="utf-8"><!--使支持英汉混编-->
 <title></title><!--标签标题-->
-<link rel="shortcut icon" href="files/icon.ico"><!--标签图标-->
-<link rel="stylesheet" type="text/css" href="files/indexstyle.css"><!--引入样式表，哈哈-->
-<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"><!--Font Awesome国内推荐 CDN-->
-<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script><!--看板娘-->
+<!-- 使页面随设备大小而改变 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--标签图标-->
+<link rel="shortcut icon" href="files/icon.ico">
+<!--引入样式表，哈哈-->
+<link rel="stylesheet" type="text/css" href="files/indexstyle.css">
+<!--Font Awesome国内推荐 CDN-->
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+<!-- jQuery_cdn -->
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<!--看板娘-->
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+<!-- 导入页面js文件 -->
+<script src="files\indexstyle.css"></script>
+<script>
+    $(document).ready(function(){
+    $("#contentdown").click(function(){
+        $("#daohang").fadeToggle("slow");
+    })
+})
+</script>
 </head>
 
 
 <body style="margin:0px;background-image: url('bg.jpg');background-size: cover;background-repeat: no-repeat;"><!--主体-->
 
+
+    <!-- 屏幕小于1100px的设备展示导航 -->
+    <div id="phone_showbar">
+        <div id="p_more">
+            <div id="contentdown"><i class="fa fa-th-list"></i></div>
+        </div>
+        
+    </div>
+
+
     <!-- 导航栏目 -->
-    <ul class="list" id="daohang">
+    <ul class="list" id="daohang" >
         <li><a href="index.html">首页</a></li>
         <li><a href="index_a.html">更多</a></li>
         <li><a href="index.html">关于</a></li>

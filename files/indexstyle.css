@@ -12,15 +12,16 @@
 }
 #daohang li {
     float: left;
-    }
+}
 #daohang li a {
     display: inline-block;
     padding: 14px 16px;
     text-decoration: none;
 }
 #daohang li a:hover {
+    /* border: #12F6E9 solid 2px; */
     border-radius: 10px;
-    background-color: #12F6E9;
+    background-color: #ffffffc0;
 }
 .temporary_card {
     background-color: #ffffffd5;
@@ -33,6 +34,37 @@
     text-decoration: none;
     padding: 12px 5px;
 }
-/* .temporary_card li {
-    mar;
-} */
+
+
+/* 屏幕小于1100px的设备展示导航 */
+#phone_showbar {
+    display: none;
+}
+
+
+@media screen and (max-width: 1100px) {
+    #daohang li {
+        float: none;
+    }
+    #daohang li a {
+        display: block;
+    }
+    #daohang {
+        display: none;
+    }
+    #phone_showbar {
+        display: block;
+        margin: 0;
+        padding: 0;
+        background-color: #58f8abeb;
+        position: sticky;
+    }
+    #p_more {
+        display: inline-block;
+        padding: 12px 16px;
+    }
+    #p_more:hover {
+        border-radius: 10px;
+        background-color: #ffffffc0;  
+    }
+}
