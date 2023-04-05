@@ -32,10 +32,15 @@
 
     <!-- 屏幕小于1100px的设备展示导航 -->
     <div id="phone_showbar">
-        <div id="p_more">
-            <div id="contentdown"><i class="fa fa-th-list"></i></div>
+        <div class="p_more">
+            <div id="contentdown"><a href="https://github.com/firstloading"><i class="fa fa-github"></i></a>
+            </div>
+        </div>  
+            
+        <div class="p_more" id="trigger">
+                <div id="contentdown"><i class="fa fa-th-list"></i>
+                </div>
         </div>
-        
     </div>
 
 
@@ -44,7 +49,8 @@
         <li><a href="index.html">首页</a></li>
         <li><a href="index_a.html">更多</a></li>
         <li><a href="index.html">关于</a></li>
-        <div></div>
+        <!-- <li id="daohang_photo"></li> -->
+        <div><img src="files\photo.jpg" alt="真糟糕，图片丢失了" width="60%" class="daohang_image"></div>
     </ul>
 
 
@@ -52,9 +58,42 @@
     <!-- 物理实验数据处理页面网址 -->
     <div class="temporary_card">
         <ul class="list">
-            <li><a href="other\duopule.html">实验4：多普勒<i class="fa fa-unlink"></i></a></li>
-            <li><a>实验5：A超</a><i class="fa fa-unlink"></i></li>
-            <li><a>实验6：旋光仪</a><i class="fa fa-unlink"></i></li>
+            <li><button type="button" class="btn">
+                <strong><a href="other\duopule.html">实验4：多普勒<i class="fa fa-unlink"></i></a></strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+              
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </button>
+            </li>
+            <li><button type="button" class="btn">
+                <strong><a href="other\duopule.html">实验5：A超<i class="fa fa-unlink"></i></a></strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+              
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </button>
+            </li> 
+            <li><button type="button" class="btn">
+                <strong><a href="other\duopule.html">实验6：旋光仪<i class="fa fa-unlink"></i></a></strong>
+                <div id="container-stars">
+                  <div id="stars"></div>
+                </div>
+              
+                <div id="glow">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </button>
+            </li> 
         </ul>
     </div>
 
