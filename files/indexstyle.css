@@ -228,6 +228,7 @@
         width: 40%;
         height: 100%;
         position: absolute;
+        z-index: 3;
     }
     #phone_showbar {
         display: block;
