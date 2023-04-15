@@ -23,9 +23,14 @@
     border-radius: 10px;
     background-color: #ffffffc0;
 }
+
+/* 手机端导航的显示图片样式表 */
 .daohang_image {
     display: none;
 }
+
+
+/* 暂时网站放置点样式表 */
 .temporary_card {
     background-color: #ffffffd5;
     border-radius: 15px;
@@ -248,10 +253,20 @@
     #trigger {
         float: right;
     }
-    .daohang_image {
-        border-radius:50%;
-        display: block;
-        margin: auto;
-        margin-top: 20px;
+
+
+    /* 导航里的图片样式 */
+    #daohang_image {
+      background-image: url("https://firstloading.github.io/files/photo.jpg");
+      background-size: cover;
+      border:rgba(0, 0, 0, 0) solid 2px;
+    }
+
+    /* 图片点击时的样式 */
+    .colorcard {
+      display: block;
+      padding: 20px;
+      border-radius: 50%;
+      background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
     }
 }
