@@ -61,40 +61,6 @@
             margin-bottom: 9px;
         }
 
-        .mainlist {
-            width: 66%;
-            float: left;
-            padding: 1px;
-            height: 2000px;
-        }
-
-        /*旁边栏目的样式表*/
-        .asidebox {
-            border: none;
-            border-radius: 12px;
-            margin: 0px;
-            background-color: rgba(245, 188, 255, 0.18);
-            float: right;
-            width: 25%;
-            padding: 14px 24px;
-            height: 2000px;
-        }
-
-        /*公告板的样式表*/
-        .announceboard {
-            border: 2px solid #e88686ab;
-            border-radius: 12px;
-            padding: 12px;
-            width: 80%;
-            height: 20px;
-            transition: height 2s;
-            overflow: hidden;
-            background-color: rgba(226, 175, 221, 0.71);
-        }
-
-        .announceboard:hover {
-            height: 170px;
-        }
 
         /*导航类别名称*/
         .daohangtitle {
@@ -118,35 +84,40 @@
 <body style="margin:0px;"><!--主体-->
     <!--导航栏-->
 
-<div id="screen_body">
+    <div id="screen_body">
 
-</div>
+    </div>
 
 
     <ul class="ul">
         <li class="li"><a href="index.html">首页</a></li>
         <li class="li"><a href="daohang.html">导航</a></li>
         <li class="li"><a href="other.html">其它</a></li>
-        <div class="dropdown">
+        <!-- 原有老式的下拉菜单 -->
+        <!-- <div class="dropdown">
             <a class="dropbtn" href="resource.html">资源</a>
             <div class="dropdown-content">
                 <a href="resource1.html">拓展信息</a>
                 <a href="#">链接 2</a>
                 <a href="#">链接 3</a>
             </div>
+        </div> -->
+        <!-- 使用bootstrap新的下拉菜单 -->
+            <div class=" btn-group">
+              <button type="button" class="dropbtn btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="background-color: transparent; border: transparent solid 0;display: inline-block;padding: 15px 25px;">资源</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Tablet</a></li>
+                <li><a class="dropdown-item" href="#">Smartphone</a></li>
+              </ul>
+            </div>
     </ul>
     <!--导航栏-->
 
 
     <!-- 使用bootstrap构建页面 -->
-    <div class="container" style="background-color: #ffffffa2;">
-
-    </div>
+    <div class="container" style="background-color: #ffffffce;">
 
 
-
-    <!-- v主页导航-->
-    <div class="mainlist">
 
 
         <!--插画壁纸-->
@@ -199,23 +170,20 @@
         <div class="daohangtitle">小说
             <div class="underline"></div><!--主页导航标题的下划线-->
         </div>
-        <br>
+        <br />
         <div class="dh">
             <a href="https://www.qidian.com/?source=m_jump">起点</a>
             <a href="https://www.23qb.com/">铅笔小说</a>
         </div>
     </div>
-    <!--旁边栏目-->
 
 
-    <!-- <div class="asidebox">
-        <div class="announceboard">
-            <span style="margin: 30%;"><b>公告板</b></span>
-            <hr>
-            添加了live2D看板娘
-        </div>
+
+    <!-- v主页导航-->
+
     </div>
-    主页导航 -->
+
+
 </body>
 
 </html>
