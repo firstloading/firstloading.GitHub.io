@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--标签标题-->
-    <title>youie_tuijian</title>
+    <title>约也的测试点</title>
 
     <!--标签图标-->
     <link rel="shortcut icon" href="files/icon.ico">
@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="files/style.css">
 
     <!-- 引入jqeury -->
-    <!-- <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script> -->
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 
     <!-- 新 Bootstrap5 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
@@ -78,6 +78,14 @@
             top: 1.4em;
             z-index: -1;
         }
+
+        /* 正文半透明框的通用样式 */
+        .content_box {
+            background-color: #ffffffce;
+        }
+        .content_box a {
+            text-decoration: none;
+        }
     </style>
 </head>
 
@@ -103,19 +111,20 @@
             </div>
         </div> -->
         <!-- 使用bootstrap新的下拉菜单 -->
-            <div class=" btn-group">
-              <button type="button" class="dropbtn btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" style="background-color: transparent; border: transparent solid 0;display: inline-block;padding: 15px 25px;">资源</button>
-              <ul class="dropdown-menu">
+        <div class=" btn-group">
+            <button type="button" class="dropbtn btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                style="background-color: transparent; border: transparent solid 0;display: inline-block;padding: 15px 25px;">资源</button>
+            <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Tablet</a></li>
                 <li><a class="dropdown-item" href="#">Smartphone</a></li>
-              </ul>
-            </div>
+            </ul>
+        </div>
     </ul>
     <!--导航栏-->
 
 
     <!-- 使用bootstrap构建页面 -->
-    <div class="container" style="background-color: #ffffffce;">
+    <div class="container content_box" style="display: none;">
 
 
 
@@ -124,36 +133,17 @@
         <div class="daohangtitle">插画壁纸
             <div class="underline"></div><!--主页导航标题的下划线-->
         </div>
-        <br>
-        <div class="dh">
-            <a href="www.pixivic.com">pixivic</a>
-            <a href="https://wallhaven.cc/">wallhaven</a>
-            <a href="https://bz.zzzmh.cn/index">极简壁纸</a>
-            <a href="https://wall.alphacoders.com/">wallpaper</a>
-        </div>
-        <br>
+
 
 
         <div class="daohangtitle">游戏
             <div class="underline"></div><!--主页导航标题的下划线-->
         </div>
-        <br>
-        <div class="dh">
-            <a href="https://www.yikm.net/">小霸王</a>
-            <a href="https://poki.cn/">游戏</a>
-            <a href="https://www.v2fy.com/game/tetris/">俄罗斯方块</a>
-        </div>
-        <br>
 
 
         <div class="daohangtitle">工具
             <div class="underline"></div><!--主页导航标题的下划线-->
         </div>
-        <br>
-        <div class="dh">
-            <a href="https://www.67tool.com/">在线工具箱</a>
-        </div>
-        <br>
 
 
         <div class="daohangtitle">娱乐
@@ -170,19 +160,82 @@
         <div class="daohangtitle">小说
             <div class="underline"></div><!--主页导航标题的下划线-->
         </div>
-        <br />
-        <div class="dh">
-            <a href="https://www.qidian.com/?source=m_jump">起点</a>
-            <a href="https://www.23qb.com/">铅笔小说</a>
-        </div>
+
     </div>
 
+
+    <br />
+
+
+    <!-- 选项卡 -->
+    <!-- 选项卡点 -->
+    <div class="container content_box">
+        <ul class="nav nav-tabs " role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#pictures">插画壁纸</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#books">娱乐</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tools">工具</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#games">游戏</a>
+            </li>
+
+        </ul>
+
+        <!-- 选项卡内容点 -->
+        <div class="tab-content">
+            <div id="pictures" class="container tab-pane active">
+                <br>
+                <div class="dh">
+                    <a href="www.pixivic.com">pixivic</a>
+                    <a href="https://wallhaven.cc/">wallhaven</a>
+                    <a href="https://bz.zzzmh.cn/index">极简壁纸</a>
+                    <a href="https://wall.alphacoders.com/">wallpaper</a>
+                </div>
+                <br>
+            </div>
+            <div id="books" class="container tab-pane fade">
+                <br />
+                <div class="dh">
+                    <a href="https://www.qidian.com/?source=m_jump">起点</a>
+                    <a href="https://www.23qb.com/">铅笔小说</a>
+                </div>
+                <br />
+            </div>
+            <div id="tools" class="container tab-pane fade">
+                <br>
+                <div class="dh">
+                    <a href="https://www.67tool.com/">在线工具箱</a>
+                </div>
+                <br>
+            </div>
+            <div id="games" class="container tab-pane fade"> <br>
+                <div class="dh">
+                    <a href="https://www.yikm.net/">小霸王</a>
+                    <a href="https://poki.cn/">游戏</a>
+                    <a href="https://www.v2fy.com/game/tetris/">俄罗斯方块</a>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
 
 
     <!-- v主页导航-->
 
     </div>
 
+    <!-- 底部内容 -->
+
+    <div class="container content_box" style="background-color: #ffffffce;text-align: center; ">
+        <hr />
+        <span>来自：firstloading/youie</span><br />
+        <span>Welcome come to here!</span>
+    </div>
 
 </body>
 
