@@ -30,8 +30,7 @@
     min-width: 150px;
     background-color: #a4f0f4;
   }
-.dropdown-content a {
-    text-decoration: none;
+.dropdown-content {
     display: block;
     padding: 14px 18px;
   }
@@ -46,5 +45,5 @@
 /*其它链接文字样式清除*/
 a {
     text-decoration: none;
-  }
+}
   /*其它链接文字样式清除^*/

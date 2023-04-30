@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一些小样式</title>
+    <style>
+        .basal {
+            min-width: 10px;
+            min-height: 10px;
+            border: darkblue solid 1px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        #loading_1 {
+            animation: loadingone 10 
+        }
+
+        @keyframes loadingone
+        {
+            10%{
+                min-width: 10px;
+            min-height: 10px;
+        }
+           80% {
+                min-width: 5px;
+            min-height: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-image: linear-gradient(120deg, #2bec72,#fef132);display: inline-block;">
+        <div
+            style="border: black solid 3px;min-height: 50px;min-width: 100px;color: #2bec7299;display: inline-block;background-color: azure;text-align: center;">
+
+            <span style="font-size: large;">无限加护</span>
+        </div>
+
+    </div>
+    <div>
+        <span class="basal" id="loading_1"></span>
+        <span class="basal" id="loading_1"></span>
+        <span class="basal" id="loading_1"></span>
+    </div>
+</body>
+
+</html>

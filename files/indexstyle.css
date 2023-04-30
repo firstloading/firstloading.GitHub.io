@@ -50,6 +50,16 @@
   min-width: 100%;
 }
 
+/* 正文半透明框的通用样式 */
+.content_box {
+  background-color: #ffffffce;
+  box-shadow: 5px 5px 20px #01010156;
+}
+
+.content_box a {
+  text-decoration: none;
+}
+
 
 /* 暂时网站放置点样式表 */
 .temporary_card {
