@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+<head><!--头部-->
+    <meta charset="utf-8"><!--使支持英汉混编-->
+    <title></title><!--标签标题-->
+    <link rel="shortcut icon" href="files/icon.ico"><!--标签图标-->
+    <link rel="stylesheet" type="text/css" href="..\files\style.css"><!--引入样式表，哈哈-->
+    <!-- <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>看板娘 -->
+    <style>   
+    .try {
+        border: #91defe solid 2px;
+        min-width: 50px;
+        min-height: 50px;
+        display: inline-block;
+        transform: rotate3d(1, 0.2, 1, 90deg)
+    }
+    </style>
+</head>
+
+<body style="margin:0px;background-image: url('https://i.imgur.com/tNa0SxH.jpeg');"><!--主体-->
+    <!--导航栏-->
+    <ul class="ul">
+        <li class="li"><a href="index.html">首页</a></li>
+        <li class="li"><a href="daohang.html">导航</a></li>
+        <li class="li"><a href="other.html">其它</a></li>
+        <div class="dropdown">
+            <a class="dropbtn" href="resource.html">资源</a>
+            <div class="dropdown-content">
+                <a href="resource1.html">拓展信息</a>
+                <a href="#">链接 2</a>
+                <a href="#">链接 3</a>
+            </div>
+    </ul>
+    <!--导航栏-->
+
+
+    <!-- 学习内容地面 -->
+    <div id="demo"></div>
+    <button id="bu" type="button" onclick="displaydate()">显示时间</button>
+    <button type="button" onload="change()">改变上一个按钮的样式</button>
+    <script>
+        const tureThing = '\'艾米莉亚\'是我的老婆！';
+        document.write("<p style='color:#ff0000'>"+tureThing[1]+tureThing.length+"</p>");
+        var emiria = {
+            name : '爱蜜莉雅' ,
+            hairColor : '银发',
+            height : '164cm',
+        };
+        document.write(emiria.name + '是我的老婆');
+        document.write(emiria["name"]+'是我老婆');
+        function displaydate() {
+            var b = 12;
+            cl = console.log;
+            cl(b);
+            b = 14;
+            cl('b = 14'+b);
+            var b = 12222222;
+            cl('var b'+b)
+            // document.getElementById('demo').innerHTML=Date();
+            alert('十年生死两茫茫');
+            a = document.getElementById('demo')
+            a.innerHTML = "在这个美丽的时节" + Date();
+
+        }
+        function change(){
+            a = document.getElementById('bu');
+            a.style.color= "#ff0000";
+            a.style.border="#ff0000 solid 5px";
+            // a.style.border-radius ="2px";
+        }
+        document.write("<h1>这是一个标题</h1><p>这里是内容</p>")
+        function check_input(){
+            var a = document.getElementById('input1').value;
+            var times = 0
+            var afdada = 'sajlfjsdf', dfafsaf = 'dfjasdfjla', djakdjfla = 'adjfaldjflaf';
+            if(a == ""||isNaN(a)){
+                alert('不是数值哦！：）');
+                cl = console.log
+                times =times +1
+                cl('用户错误输入'+ times +'次')
+                window.alert('goodjob' +123e5)
+            };
+        }
+    </script>
+    <!-- <h style="border-radius: ;"></h> -->
+    <input id="input1" type="text">
+    <button onclick="check_input()" type="button">submit</button>
+    <div>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        <p class="try"></p>
+        </div>
+</body>
+
+</html>
