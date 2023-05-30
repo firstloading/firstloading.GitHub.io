@@ -3,7 +3,6 @@
     list-style-type: none;
     padding:0;
     margin:0;
-    overflow: hidden;
     background-color: rgb(180, 180, 180); /* 不支持线性的时候显示 */
     background-image: linear-gradient(to right, #a4f0f4 , #ddbef8);
   }
@@ -17,7 +16,7 @@
     text-align: center;
     text-decoration: none;
   }
-.dropdown {
+/* .dropdown {
     display: inline-block;
   }
 .li a:hover, .dropbtn:hover,.dropdown-content a:hover {
@@ -36,7 +35,7 @@
   }
 .dropdown:hover .dropdown-content {
     display: block;
-  }
+  } */
   /* 下拉按钮的样式 */
   #xiala {
     display: none;
