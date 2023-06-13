@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <!--使支持英汉混编-->
+    <meta charset="utf-8">
+
+    <!-- 视图设置 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--标签标题-->
+    <title>约也的测试点</title>
+
+    <!--标签图标-->
+    <link rel="shortcut icon" href="https://firstloading.github.io/src/assets/icon.svg">
+
+    <!--引入样式表，哈哈-->
+    <link rel="stylesheet" type="text/css" href="https://firstloading.github.io/files/style.css">
+
+    <!-- 引入jqeury -->
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-- 新 Bootstrap5 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+
+    <!--看板娘-->
+    <script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+
+    <!--该页面下的样式表-->
+    <style>
+        /* 引入bootstrap后的样式表 */
+        /* 植入背景 */
+        body {
+            /* z-index: -6;
+            min-height: 100%;
+            min-width: 100%; */
+            background-color: #fff;
+            background-image: url('https://s2.xptou.com/2023/05/01/644f708a349c3.png');
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        .dh {
+            border: 2px solid rgb(129, 236, 248);
+            border-radius: 6px;
+            padding: 6px 23px;
+        }
+
+        .dh a {
+            display: inline-block;
+            padding: 7px 14px;
+            background-color: rgb(150, 218, 176);
+            border: none;
+            border-radius: 13px;
+            margin-top: 9px;
+            margin-bottom: 9px;
+        }
+
+
+        /*导航类别名称*/
+        .daohangtitle {
+            padding: 2px;
+            position: relative;
+        }
+
+        /*类别名称的下划线样式*/
+        .underline {
+            background-color: aquamarine;
+            padding: 3px;
+            min-width: 40px;
+            border-radius: 3px;
+            position: absolute;
+            top: 1.4em;
+            z-index: -1;
+        }
+
+        /* 正文半透明框的通用样式 */
+        .content_box {
+            background-color: #ffffffce;
+            box-shadow: 5px 5px 20px #01010156;
+        }
+
+        .content_box a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<div style="margin:0px;"><!--主体-->
+    <!-- 导航栏 -->
+
+    <div id="screen_body">
+
+    </div>
+
+
+    <ul class="ul">
+        <li class="li"><a href="https://firstloading.github.io/index.html">首页</a></li>
+        <li class="li"><a href="https://firstloading.github.io/daohang.html">导航</a></li>
+        <li class="li"><a href="https://firstloading.github.io/test/try_1.html">其它</a></li>
+        <!-- 原有老式的下拉菜单 -->
+        <!-- <div class="dropdown">
+            <a class="dropbtn" href="resource.html">资源</a>
+            <div class="dropdown-content">
+                <a href="resource1.html">拓展信息</a>
+                <a href="#">链接 2</a>
+                <a href="#">链接 3</a>
+            </div>
+        </div> -->
+        <!-- 使用bootstrap新的下拉菜单 -->
+        <div class=" btn-group">
+            <button type="button" class="dropbtn btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                style="background-color: transparent; border: transparent solid 0;display: inline-block;padding: 15px 25px;">资源</button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">AnmationShow</a></li>
+                <li><a class="dropdown-item" href="https://firstloading.github.io/resource.html">资源下载</a></li>
+            </ul>
+        </div>
+    </ul>
+    <!--导航栏-->
+
+
+    
+</div>
+<!-- 资源链接列表 -->
+<div class="container" style="padding: 12px;">
+    <div style="background-image: linear-gradient(to right, #6fbcd8 12%, #61c58b 54%, #1659e9 89%);
+    display: inline-block;
+    padding: 7px;
+    box-shadow: inset 0 0 12px #dadee9,
+    inset 12px 12px 16px #e7efea,
+    inset -12px 12px 23px #da24ff;
+    border-radius: 5px;
+    ">
+        <a href="https://firstloading.github.io/downloadfiles/sublime_text.zip" download="txteditor">文本编辑器</a>
+    </div>
+</div>
+
+<!-- 底部内容 -->
+
+<div class="container content_box" style="background-color: #ffffffce;text-align: center; ">
+    <hr />
+    <span>来自：<a href="https://github.com/firstloading"><i class="fa fa-github"></i>firstloading/youie</a></span><br />
+    <span>Welcome come to here!</span>
+</div>
+
+</body>
+
+</html>
