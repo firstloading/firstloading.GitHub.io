@@ -84,10 +84,95 @@
             background-color: #ffffffce;
             box-shadow: 5px 5px 20px #01010156;
         }
+
         .content_box a {
             text-decoration: none;
         }
+
+        /* ==========轮播图样式========== */
+        .shell {
+            width:600px;
+            height: 350px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 20px 30px 20px #1b02354f;
+        }
+
+        .images {
+            width: 500%;
+            height: 100%;
+            display: flex;
+            position: absolute;
+            left: 0;
+            transition: .2s;
+        }
+
+        .img {
+            width: 100%;
+            background-size: cover;
+        }
+
+        .img:nth-child(1) {
+            background-image: url("01.png");
+        }
+
+        .img:nth-child(3) {
+            background-image: url("03.png");
+        }
+
+        .img:nth-child(2) {
+            background-image: url("02.png");
+        }
+
+        .img:nth-child(4) {
+            background-image: url("04.png");
+        }
+
+        .img:nth-child(5) {
+            background-image: url("05.png");
+        }
+
+        .min {
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            bottom: 40px;
+            width: 20%;
+            z-index: 10;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .m {
+            width: 10px;
+            height: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+            border: solid #ffffff7d 2px;
+            background-color: #ffffff41;
+        }
+
+        .button {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            user-select: none;
+        }
+
+        .button-left,
+        .button-right {
+            font-size: 20px;
+            background-color: #1b02354f;
+            padding: 0 20px;
+            cursor: pointer;
+            color: #fff;
+            line-height: 350px;
+        }
     </style>
+
 </head>
 
 <body style="margin:0px;"><!--主体-->
@@ -127,9 +212,6 @@
     <!-- 使用bootstrap构建页面 -->
     <div class="container content_box" style="display: none;">
 
-
-
-
         <!--插画壁纸-->
         <div class="daohangtitle">插画壁纸
             <div class="underline"></div><!--主页导航标题的下划线-->
@@ -163,7 +245,28 @@
         </div>
 
     </div>
-
+    <br>
+    <!-- =========轮播图========= -->
+    <div class="shell">
+        <ul class="images">
+            <li class="img"></li>
+            <li class="img"></li>
+            <li class="img"></li>
+            <li class="img"></li>
+            <li class="img"></li>
+        </ul>
+        <ul class="min">
+            <li class="m"></li>
+            <li class="m"></li>
+            <li class="m"></li>
+            <li class="m"></li>
+            <li class="m"></li>
+        </ul>
+        <div class="button">
+            <div class="button-left">&#8249;</div>
+            <div class="button-right">&#8250;</div>
+        </div>
+    </div>
 
     <br />
 
@@ -234,10 +337,73 @@
 
     <div class="container content_box" style="background-color: #ffffffce;text-align: center; ">
         <hr />
-        <span>来自：<a href="https://github.com/firstloading"><i class="fa fa-github"></i>firstloading/youie</a></span><br />
+        <span>来自:<a href="https://github.com/firstloading"><i
+                    class="fa fa-github"></i>firstloading/youie</a></span><br />
         <span>Welcome come to here!</span>
     </div>
-
-</body>
+    <script>
+    // ==========轮播图js=========
+    let left = document.querySelector(".button-left");
+    let right = document.querySelector(".button-right");
+    let m = document.querySelectorAll(".m");
+    let images = document.querySelector(".images");
+    // 设定指数
+    let index = 0;
+    let time;
+    function position() {
+        images.style.left = (index * -100) + "%";
+        console.log(images.style.left)
+    }
+    function add() {
+        if (index >= m.length - 1) {
+            index = 0;
+        } else {
+            console.log(index + "add_else_former")
+            index++;
+            console.log(index + "add_else_latter")
+        }
+    }
+    function descrease() {
+        if (index < 1) {
+            index = m.length - 1;
+        } else {
+            index--
+        }
+    }
+    function timer() {
+        time = setInterval(() => {
+            index++;
+            console.log(m.length + 'm.length')
+            console.log("3秒" + index)
+            descrease();
+            console.log(index+ "desc");
+            add();
+            console.log(index + "add")
+            position();
+        }, 3000)
+    }
+    left.addEventListener("click", () => {
+        desc();
+        position();
+        clearInterval(time);
+        timer();
+    })
+    right.addEventListener("click", () => {
+        add();
+        position();
+        clearInterval(time);
+        timer();
+    })
+    for (let i = 0; i < m.length; i++) {
+        m[i].addEventListener("click", () => {
+            index = i;
+            position();
+            clearInterval(time);
+            timer();
+        })
+    }
+    timer()
+    </script>
+    </body>
 
 </html>
