@@ -19,7 +19,7 @@ if (matchResult) {
         var n = document.querySelector("#input_username").value;
         var p = document.querySelector("#input_password").value;
         localStorage['name'] = n;
-        localStorage['ps'] = p;
+        // localStorage['ps'] = p;
     })
     
     // 登入页面样式改变函数
