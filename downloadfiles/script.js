@@ -13,6 +13,15 @@ if (matchResult) {
 
     document.addEventListener('DOMContentLoaded', changeLoginStyle());
 
+    // ...
+    var loginButton = document.querySelector("#loginButton");
+    loginButton.addEventListener('click', () => {
+        var n = document.querySelector("#input_username").value;
+        var p = document.querySelector("#input_password").value;
+        localStorage['name'] = n;
+        localStorage['ps'] = p;
+    })
+    
     // 登入页面样式改变函数
     function changeLoginStyle() {
         // 自动填充
@@ -25,8 +34,8 @@ if (matchResult) {
 
     // _自动填充函数
     function autoFill() {
-        var name = "hjafdkslfakjd";
-        var psWd = "sjkdfjakhkdh";
+        var name = localStorage['name'];
+        var psWd = localStorage['p'];
         document.querySelector('#input_username').value = name;
         document.querySelector('#input_password').value = psWd;
     }
