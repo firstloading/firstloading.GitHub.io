@@ -14,13 +14,13 @@ if (matchResult) {
     document.addEventListener('DOMContentLoaded', changeLoginStyle());
 
     // ...
-    var loginButton = document.querySelector("#loginButton");
-    loginButton.addEventListener('click', () => {
-        var n = document.querySelector("#input_username").value;
-        var p = document.querySelector("#input_password").value;
-        localStorage['name'] = n;
-        // localStorage['ps'] = p;
-    })
+    // var loginButton = document.querySelector("#loginButton");
+    // loginButton.addEventListener('click', () => {
+    //     var n = document.querySelector("#input_username").value;
+    //     var p = document.querySelector("#input_password").value;
+    //     localStorage['name'] = n;
+    //     // localStorage['ps'] = p;
+    // })
     
     // 登入页面样式改变函数
     function changeLoginStyle() {
